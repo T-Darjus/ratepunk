@@ -116,6 +116,9 @@
   .footer__links {
     gap: 100px;
   }
+  .footer__quick-links {
+    width: unset;
+  }
 }
 
 @media (max-width: 500px) {
