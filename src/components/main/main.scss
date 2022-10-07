@@ -116,6 +116,10 @@
   .ref-link {
     margin-bottom: 71px;
   }
+  .steps {
+    gap: 48px;
+  }
+
   .steps__card {
     flex-direction: column;
     gap: 32px;
@@ -140,6 +144,7 @@
     line-height: 24px;
     margin-bottom: 24px;
   }
+
   .steps__card {
     padding: 0;
   }
