@@ -77,3 +77,57 @@ input {
   border-radius: 0px 8px 8px 0px;
   padding: 19px 24px;
 }
+
+@media (max-width: 580px) {
+  .confirmation__textbox {
+    margin-top: 0;
+  }
+
+  .confirmation__referral {
+    flex-direction: column;
+    gap: 16px;
+    input {
+      border: 1px solid #1f343e;
+      border-radius: 8px;
+    }
+  }
+  .btn-copy {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 426px) {
+  .email-error {
+    height: unset;
+    line-height: 12px;
+  }
+
+  form {
+    input {
+      padding: 20px 20px 16px 60px;
+      background: url("../../assets/email icon.svg") no-repeat 20px 20px;
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .btn-submit {
+    height: 56px;
+    font-size: 16px;
+    line-height: 15px;
+    padding: 17px 30px 17px;
+    border-radius: 8px;
+  }
+
+  .confirmation__referral {
+    input {
+      font-size: 16px;
+      padding: 17px 0 18px 20px;
+    }
+  }
+  .btn-copy {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

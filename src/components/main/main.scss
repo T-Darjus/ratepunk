@@ -76,10 +76,83 @@
   line-height: 32px;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1070px) {
   .main__container {
     flex-direction: column;
     align-items: center;
     gap: 80px;
+  }
+}
+
+@media (max-width: 580px) {
+  .main {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  .main__form {
+    padding: 48px 32px;
+  }
+}
+
+@media (max-width: 525px) {
+  .main__container {
+    gap: 50px;
+  }
+  .steps__card {
+    gap: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main__form {
+    padding: 32px 16px;
+    height: unset;
+  }
+  .main__form-heading {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 24px;
+  }
+  .ref-link {
+    margin-bottom: 71px;
+  }
+  .steps__card {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 16px;
+  }
+  .steps__card-textbox {
+    max-width: unset;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 426px) {
+  .main__form-heading {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .main__form-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .steps__card {
+    padding: 0;
+  }
+  .steps__card-tier {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.28px;
+  }
+  .steps__card-heading {
+    line-height: 40px;
+  }
+  .steps__card-description {
+    font-size: 16px;
+    line-height: 24px;
   }
 }

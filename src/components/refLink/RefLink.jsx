@@ -53,7 +53,7 @@ const RefLink = () => {
           }}
           className="btn btn-copy"
         >
-          Copy
+          {window.innerWidth > 580 ? "Copy" : "Copy URL"}
         </button>
       </div>
     </div>
