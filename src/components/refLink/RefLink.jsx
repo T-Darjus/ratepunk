@@ -1,6 +1,7 @@
 import "./reflink.scss";
 import check from "../../assets/check-symbol.svg";
 import React, { useState } from "react";
+import axios from "axios";
 
 const RefLink = () => {
   const [confirmation, setConfirmation] = useState(false);
@@ -15,6 +16,19 @@ const RefLink = () => {
     if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
       setConfirmation(true);
       setEmailError("");
+      axios
+        .put(
+          "https://api.jsonbin.io/v3/b/634010e90e6a79321e2028e5",
+          { email },
+          {
+            headers: {
+              "X-Master-Key":
+                "$2b$10$6mk03rTzL2yn7RcmcgDxK.sn0BRufhxY0OvYIZFXH0xneT0rBuTAG",
+            },
+          }
+        )
+        .then((res) => console.log(res.data.record.email))
+        .catch((err) => console.log(err));
     }
     setEmailError("Please enter an email address!");
   };
