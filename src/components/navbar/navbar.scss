@@ -1,0 +1,39 @@
+@import "../styles/variables";
+
+.navigation {
+  background-color: #fff;
+  .navigation__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+}
+.navigation__list {
+  display: flex;
+  padding-right: 16px;
+}
+.navigation__container {
+  li {
+    &:first-child {
+      margin-right: 52px;
+    }
+    &:last-child {
+      margin-left: 57px;
+    }
+  }
+}
+.navigation__link {
+  font-size: 20px;
+  line-height: 32px;
+  color: #434a54;
+  &:hover {
+    color: $btn-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation__list {
+    display: none;
+  }
+}

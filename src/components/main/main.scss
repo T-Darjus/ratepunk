@@ -1,0 +1,85 @@
+@import "../styles/variables";
+
+.main {
+  background-color: $bg-main;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.main__container {
+  display: flex;
+  justify-content: space-between;
+}
+.main__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 544px;
+  height: 797px;
+  padding: 64px;
+  background-color: $bg-light;
+  border: 1px solid $main-color;
+  border-radius: 16px;
+}
+.main__form-heading {
+  font-family: "Caveat Brush", cursive;
+  font-size: 48px;
+  line-height: 72px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.main__form-description {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+.ref-link {
+  margin-bottom: auto;
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.steps__card {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.steps__card-textbox {
+  max-width: 256px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.steps__card-tier {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  color: $btn-color;
+  text-transform: uppercase;
+}
+.steps__card-heading {
+  font-family: "Caveat Brush", cursive;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.steps__card-description {
+  font-size: 20px;
+  line-height: 32px;
+}
+.main__form-bottom--text {
+  color: $light-text;
+  line-height: 32px;
+}
+
+@media (max-width: 1060px) {
+  .main__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+}
